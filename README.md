@@ -14,9 +14,5 @@ Windows installation
 3. delete existing pdfenv
 4. py -3.8 -m venv pdfenv
 5. pdfenv\Scripts\activate
-
-6. cd flatland
-7. pip install wheel
-8. pip install -r requirements_dev.txt
-9. cd src
-10. evaluate.py
+6. pip install PyPDF2
+7. cd src
