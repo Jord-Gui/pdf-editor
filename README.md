@@ -8,7 +8,7 @@ Add a GUI/Turn it into a web application
 
 ## Installation Instructions
 Tested working with Python 3.8.5
-Install venv (py -3.8 -m pip install -user virtualenv)
+Install venv (py -3.8 -m pip install virtualenv)
 
 Windows installation
 1. clone repository
