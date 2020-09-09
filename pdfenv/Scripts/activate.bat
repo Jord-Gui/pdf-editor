@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Users\Jord\Repositories\PDF-Editor\pdfenv
+set VIRTUAL_ENV=C:\Users\Jord_\Repositories\PDF-Editor\pdfenv
 
 if not defined PROMPT set PROMPT=$P$G
 

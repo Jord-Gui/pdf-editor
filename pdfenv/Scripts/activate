@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Users\Jord\Repositories\PDF-Editor\pdfenv"
+VIRTUAL_ENV="C:\Users\Jord_\Repositories\PDF-Editor\pdfenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
