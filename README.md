@@ -1,5 +1,7 @@
 # PDF-Editor
-Edit you PDF!!!
+Edit you PDF!!!  
+  
+References: https://automatetheboringstuff.com/2e/chapter15/
 
 ## To Do
 Add a GUI/Turn it into a web application
