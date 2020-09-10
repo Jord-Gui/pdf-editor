@@ -7,7 +7,7 @@ References: https://automatetheboringstuff.com/2e/chapter15/
 Add a GUI/Turn it into a web application
 
 ## Installation instructions
-Tested working with Python 3.8.5
+Tested working with Python 3.8.5  
 Install venv (py -3.8 -m pip install virtualenv)
 
 Windows installation
