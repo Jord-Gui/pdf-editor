@@ -4,7 +4,8 @@ Edit you PDF!!!
 References: https://automatetheboringstuff.com/2e/chapter15/
 
 ## To do
-Add a GUI/Turn it into a web application
+Add a GUI/Turn it into a web application  
+Add parser for command line to do multiple commands at once e.g. merge (cut pdf1) pdf2 
 
 ## Installation instructions
 Tested working with Python 3.8.5  
