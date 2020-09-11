@@ -20,5 +20,5 @@ Windows installation
 7. cd src
 
 ## Usage in terminal
-cut_pdf.py pdf_file start end new_pdf_file
+cut_pdf.py pdf_file start end new_pdf_file  
 merge_pdf.py new pdf file pdf file 1 pdf file 2 ... pdf file n
