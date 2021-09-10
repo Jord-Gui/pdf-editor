@@ -22,4 +22,4 @@ Windows installation
 
 ## Usage in terminal
 cut_pdf.py pdf_file start end new_pdf_file  
-merge_pdf.py new pdf file pdf file 1 pdf file 2 ... pdf file n
+merge_pdf.py new_pdf_file pdf_file_1 pdf_file_2 ... pdf_file_n
