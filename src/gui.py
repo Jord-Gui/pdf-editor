@@ -5,24 +5,28 @@ from merge import merge_pdf
 from cut import cut_pdf
 
 
-def UploadAction():
-    filename = filedialog.askopenfilename()
-    if filename:
-        print('Selected:', filename)
-        filenames.append(filename)
-    else:
-        print('No file selected')
+class PDFEditor:
 
+    def __init__(self, root) -> None:
+        root.title("Jord's PDF Editor")
+        root.geometry("400x300")
 
-filenames = []
+        self.filenames = []
+
+        self.upload_btn = tkinter.Button(root, text='Open', command=self.UploadAction)
+        self.upload_btn.pack()
+
+    def UploadAction(self):
+        filename = filedialog.askopenfilename()
+        if filename:
+            print('Selected:', filename)
+            self.filenames.append(filename)
+        else:
+            print('No file selected')
+
 
 root = tkinter.Tk()
-root.title("Jord's PDF Editor")
-root.geometry("400x300")
-
-upload_btn = tkinter.Button(root, text='Open', command=UploadAction)
-upload_btn.pack()
-
+pdfEdit = PDFEditor(root)
 root.mainloop()
 
-print(str(filenames))
+print(str(pdfEdit.filenames))
