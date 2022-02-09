@@ -23,7 +23,7 @@ class PdfEditor:
         return new_window
 
     def upload_action(self, filenames):
-        filename = filedialog.askopenfilenames()
+        filename = filedialog.askopenfilename()
         if filename:
             print('Selected:', filename)
             filenames.append(filename)
@@ -37,7 +37,7 @@ class PdfEditor:
 
         filenames = []
 
-        upload_btn = tkinter.Button(merge_window, text='Select Files', command=lambda: self.upload_action(filenames))
+        upload_btn = tkinter.Button(merge_window, text='Select File', command=lambda: self.upload_action(filenames))
         upload_btn.pack()
 
 
