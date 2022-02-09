@@ -1,4 +1,5 @@
 from cgitb import text
+from heapq import merge
 from statistics import geometric_mean
 import tkinter
 from tkinter import filedialog
@@ -13,7 +14,7 @@ class PdfEditor:
         master.title(title)
         master.geometry(geometry)
 
-        self.merge_btn = tkinter.Button(master, text='Merge Files', command=lambda: self.merge_files(master, geometry))
+        self.merge_btn = tkinter.Button(master, text='Merge PDFs', command=lambda: self.merge_files(master, geometry))
         self.merge_btn.pack()
 
     def open_new_window(self, parent, title, size):
@@ -22,11 +23,12 @@ class PdfEditor:
         new_window.geometry(size)
         return new_window
 
-    def upload_action(self, filenames):
+    def select_file(self, window, filenames):
         filename = filedialog.askopenfilename()
         if filename:
-            print('Selected:', filename)
+            print('Selected: ', filename)
             filenames.append(filename)
+            tkinter.Label(window, text=filename).pack()
         else:
             print('No file selected')
         print(filenames)
@@ -35,10 +37,15 @@ class PdfEditor:
         print('Merge selected')
         merge_window = self.open_new_window(master, "Merge PDFs", geometry)
 
+        tkinter.Label(merge_window, text="Select your files in order:").pack()
+
         filenames = []
 
-        upload_btn = tkinter.Button(merge_window, text='Select File', command=lambda: self.upload_action(filenames))
+        upload_btn = tkinter.Button(merge_window, text='Select File', command=lambda: self.select_file(merge_window, filenames))
         upload_btn.pack()
+
+        merge_btn = tkinter.Button(merge_window, text='Merge Files')
+        merge_btn.pack()
 
 
 root = tkinter.Tk()
